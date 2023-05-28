@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.body-container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18px;
+}
+
+.main-container{
+    height: 290px;
+    width: 290px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+}
+
+.main-container .row{
+    height: 33.34%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    /* background-color: green; */
+    border-bottom: 0.5px solid gray;
+    display: flex;
+}
+
+.main-container .row-2{
+    border-bottom: none;
+}
+
+.main-container .row .col{
+    height: 100%;
+    width: 33.34%;
+    border-right: 0.5px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-container .row .col-2{
+    border-right: none;
+}
+
+.main-container .row .col p{
+    color: azure;
+    font-size: 54px;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Permanent Marker', cursive;
+    /* display: none; */
+}
+
+.body-container .pull-line{
+    display: none;
+}
+
+.body-container .line{
+    height: 310px;
+    width: 1px;
+    background-color: red;
+    z-index: 99;
+    position: absolute;
+}
+
+.body-container .line-hor{
+    rotate: 90deg;
+    height: 310px;
+    width: 1px;
+    background-color: red;
+    z-index: 99;
+    position: absolute;
+}
+
+.body-container .vertical-0{
+    margin-right: 190px;
+}
+
+.body-container .vertical-1{
+    width: 0.5px;
+}
+
+.body-container .vertical-2{
+    margin-left: 190px;
+}
+
+.body-container .horizontal-0{
+    width: 0.5px;
+    margin-bottom: 190px;
+}
+
+.body-container .horizontal-1{
+    width: 0.5px;
+}
+
+.body-container .horizontal-2{
+    width: 0.5px;
+    margin-top: 190px;
+}
+
+.body-container .line-slant{
+    height: 400px;
+    width: 1px;
+    background-color: red;
+    z-index: 99;
+    position: absolute;
+}
+
+.body-container .slant-0{
+    width: 0.5px;
+    rotate: 45deg;
+}
+
+.body-container .slant-1{
+    width: 0.5px;
+    rotate: 135deg;
+}
+
+.body-container .users{
+    margin-left: 670px;
+    height: 75px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    font-size: 24px;
+    color: #f8f8f8;
+    font-family: 'Ubuntu',sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -150px;
+}
+
+.body-container .users .user{
+    height: 35%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user2{
+    margin-top: 175px;
+}
+
+.body-container .users .circle{
+    height: 100%;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.red{
+    background: rgb(57, 2, 2);
+    border: 2px solid rgb(127, 20, 20);
+}
+.green{
+    background: rgb(1, 42, 1);
+    border: 2px solid rgb(47, 142, 47);
+}
