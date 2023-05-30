@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -12,13 +18,15 @@ body{
 }
 
 .body-container{
+    height: 560px;
     width: 100%;
     min-height: 100vh;
-    background: rgba(255, 255, 255, 0.1);
+    background-image: url("91657.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -18px;
 }
 
 .main-container{
@@ -36,7 +44,7 @@ body{
     width: 100%;
     background: rgba(255, 255, 255, 0);
     /* background-color: green; */
-    border-bottom: 0.5px solid gray;
+    border-bottom: 0.5px solid #9D00FF;
     display: flex;
 }
 
@@ -47,7 +55,7 @@ body{
 .main-container .row .col{
     height: 100%;
     width: 33.34%;
-    border-right: 0.5px solid gray;
+    border-right: 0.5px solid #9D00FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,6 +162,7 @@ body{
     /* background-color: aqua; */
     display: flex;
     justify-content: space-evenly;
+    user-select: none;
 }
 
 .user2{
@@ -162,7 +171,7 @@ body{
 
 .body-container .users .circle{
     height: 100%;
-    width: 25px;
+    width: 27px;
     border-radius: 50%;
 }
 
@@ -173,4 +182,229 @@ body{
 .green{
     background: rgb(1, 42, 1);
     border: 2px solid rgb(47, 142, 47);
+}
+
+.continuePlay{
+    background: transparent;
+    color: #f8f8f8;
+    height: 400px;
+    width: 450px;
+    position: absolute;
+    /* color: #62FF00; */
+    margin-right: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -90px;
+    user-select: none;
+}
+
+.continuePlay .tagBody{
+    display: none;
+}
+
+.continuePlay .GameOver{
+    font-size: 28px;
+    animation: color-change 1s infinite;
+    font-family: 'Peralta', cursive;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@keyframes color-change {
+    0% {color: yellow;}
+    20% {color: red;}
+    50% {color: yellow;}
+    70% {color: red;}
+    100% {color: yellow;}
+}
+
+.continuePlay .tagHead h3{
+    font-size: 35px;
+    font-family: 'Original Surfer', cursive;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.continuePlay .slogan p{
+    text-align: end;
+    font-size: 20px;
+    font-family: 'Original Surfer', cursive;
+    margin-bottom: 40px;
+}
+
+.continuePlay .results-declared h4{
+    font-size: 25px;
+    font-family: 'Roboto', cursive;
+    margin-bottom: 50px;
+}
+
+.continuePlay .continue-btn p{
+    font-size: 20px;
+    font-family: 'Stick',sans-serif;
+}
+
+.continuePlay .continue-btn .btn{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45px;
+    width: 400px;
+    /* background: #9D00FF; */
+}
+
+.btn .cont{
+    height: 40px;
+    width: 30%;
+    background: linear-gradient(to right, rgb(48, 143, 225),rgb(96, 24, 205));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.6s;
+    cursor: pointer;
+    color: #f8f8f8;
+    font-family: 'Roboto',sans-serif;
+}
+
+.btn .main-menu{
+    height: 40px;
+    width: 30%;
+    background: linear-gradient(to right, rgb(48, 143, 225),rgb(96, 24, 205));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 17px;
+    transition: 0.6s;
+    cursor: pointer;
+    color: #f8f8f8;
+    font-family: 'Roboto',sans-serif;
+}
+
+.btns:hover{
+    color: #f8f8f8;
+    background: transparent;
+    border-top: 1px dashed white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.body-container .hide-game{
+    height: 300px;
+    width: 300px;
+    background: transparent;
+    display: none;
+    position: absolute;
+    z-index: 200;
+}
+
+.navBtns{
+    position: absolute;
+    height: 45px;
+    width: 200px;
+    /* background-color: aqua; */
+    margin-bottom: 445px;
+    margin-left: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBtns .vsUser{
+    height: 90%;
+    width: 70%;
+    background: linear-gradient(to right, rgb(48, 143, 225),rgb(96, 24, 205));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 400;
+    color: #f8f8f8;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.navBtns .vsUser:hover{
+    box-shadow: 0px 20px 80px 0px rgba(11, 131, 230, 0.9);
+    background: transparent;
+    border: 0.1px solid rgba(11, 131, 230, 0.9);
+}
+
+.navBtns .vsComputer{
+    height: 90%;
+    width: 70%;
+    background: linear-gradient(to right, rgb(48, 143, 225),rgb(96, 24, 205));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 400;
+    color: #f8f8f8;
+    letter-spacing: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.navBtns .vsComputer:hover{
+    box-shadow: 0px 20px 80px 0px rgba(11, 131, 230, 0.9);
+    background: transparent;
+    border: 0.1px solid rgba(11, 131, 230, 0.9);
+}
+
+.reset{
+    position: absolute;
+    height: 230px;
+    width: 330px;
+    background: rgba(11, 18, 214, 0.5);
+    color: #f8f8f8;
+    backdrop-filter: blur(3px);
+    z-index: 300;
+    border-radius: 5px;
+    top: -230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.6s ease;
+}
+
+.reset .message{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu',sans-serif;
+    margin-top: 30px;
+}
+
+.reset .butt{
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: #9D00FF; */
+    margin-bottom: 20px;
+}
+
+.reset .butt .set-button{
+    width: 30%;
+    height: 50%;
+    background: rgba(226, 44, 44, 0.651);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu',sans-serif;
+    cursor: pointer;
+    user-select: none;
 }

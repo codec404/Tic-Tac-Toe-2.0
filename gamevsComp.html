@@ -7,10 +7,44 @@
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="tic-tac-toe.png" type="image/x-icon">k
+    <link rel="shortcut icon" href="tic-tac-toe.png" type="image/x-icon">
 </head>
 <body>
     <div class="body-container">
+        <div class="continuePlay">
+            <div class="tagHead">
+                <h3>Tic-tac-Toe--2.0</h3>
+            </div>
+            <div class="slogan">
+                <p>- Choose the right place</p>
+            </div>
+            <div class="tagBody">
+                <h3 class="GameOver">Game Over!!!</h3>
+                <div class="results-declared">
+                    <h4>Winner: <span id="setWinner"></span></h4>
+                </div>
+                <div class="continue-btn">
+                    <p>Do you want to play a new game vs User or go back to main menu?</p>
+                    <div class="btn">
+                        <div class="btns cont"> Continue </div>
+                        <div class="btns main-menu"> Main Menu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide-game"></div>
+        <div class="navBtns">
+          <div class="vsUser">
+            vs USER
+          </div>
+        </div>
+        <div class="reset">
+          <div class="message">Are you sure you want to reset?</div>
+          <div class="butt">
+            <div class="set-button ok">Yes</div>
+            <div class="set-button cancel">No</div>
+        </div>
+        </div>
         <div class="pull-line line vertical-0"></div>
         <div class="pull-line line vertical-1"></div>
         <div class="pull-line line-hor horizontal-0"></div>
@@ -37,12 +71,18 @@
             </div>
         </div>
         <div class="users">
-            <div class="user user1"><div class="circle red"></div>user-1 </div>
-            <div class="user user2"><div class="circle green"></div>user-2 </div>
+            <div class="user user1"><div class="circle red"></div>You 
+                <div class="crownIcon" style="height: 100%;width:30px;">
+                    <i class="fa-solid fa-crown" id="crown-1" style="color: #ffdd00;display: none;"></i>
+                </div>
+            </div>
+            <div class="user user2" style="margin-left: 23px;"><div class="circle green" style="margin-right: 10px;"></div>Computer
+                <div class="crownIcon" style="height: 100%;width:30px;">
+                    <i class="fa-solid fa-crown" id="crown-2" style="color: #ffdd00;display: none;"></i>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="game.js"></script>
+    <script src="vsComputer.js"></script>
 </body>
 </html>
-<!-- <i class="fa-solid fa-crown" style="color: #ffdd00;display: none;"></i> -->
-<!-- <i class="fa-solid fa-crown" style="color: #ffdd00;display: none;"></i> -->
