@@ -52,11 +52,6 @@ mark.forEach((e)=>{
             green.style.background = "rgb(32, 228, 32)";
             checked[getId] = 0;
             index --;
-            if(index == 0)
-            {
-                resultAndreset(winner);
-                return;
-            }
             if(checked[0] == 0 && checked[1] == 0 && checked[2] == 0)
             {
                 document.querySelector(".horizontal-0").style.display = "block";
@@ -121,6 +116,11 @@ mark.forEach((e)=>{
                 resultAndreset(winner);
                 return;
             }
+            if(index == 0)
+            {
+                resultAndreset(winner);
+                return;
+            }
         }
         else if(user2 && checked[getId] == -1)
         {
@@ -132,11 +132,6 @@ mark.forEach((e)=>{
             green.style.background = "rgb(1, 42, 1)";
             checked[getId] = 1;
             index --;
-            if(index == 0)
-            {
-                resultAndreset(winner);
-                return;
-            }
             if(checked[0] == 1 && checked[1] == 1 && checked[2] == 1)
             {
                 document.querySelector(".horizontal-0").style.display = "block";
@@ -206,6 +201,11 @@ mark.forEach((e)=>{
                 document.querySelector(".slant-0").style.background = "rgb(32,228,32)";
                 isChecked = true;
                 winner = 2;
+                resultAndreset(winner);
+                return;
+            }
+            if(index == 0)
+            {
                 resultAndreset(winner);
                 return;
             }

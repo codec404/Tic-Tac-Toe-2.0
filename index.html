@@ -5,23 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="tic-tac-toe.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <div class="inside">
-            <div class="welcome"></div>
+            <div class="welcome">
+                <div class="txt">
+                    <h4>Welcome</h4><br/>
+                    <h4>To</h4><br/>
+                    <h3>Tic-Tac-Toe 2.0</h3>
+                    <p>Welcome to the arena of Tic-Tac-Toe, where each and every move counts on the wit of the player</p>
+                </div>
+                <div class="continuenext">
+                    <div class="nextHead">
+                        <h3>Press continue to see details</h3>
+                    </div>
+                    <div class="cont-btn">
+                        Continue
+                    </div>
+                    <div class="play">
+                        Play
+                    </div>
+                </div>
+            </div>
             <div class="details">
-                <div class="continue"></div>
+                <div class="detailHead">
+                    <h3>Game Details</h3>
+                    <div class="next">Next</div>
+                </div>
+                <div class="detailList">
+                    <div class="detail detail-1">
+                        <p id="about-game">This is an interactive Tic-Tac-Toe Game.</p>
+                    </div>
+                    <div class="detail detail-2">
+                        <p id="about-game">You can play vs Computer.</p>
+                    </div>
+                    <div class="detail detail-3">
+                        <p id="about-game">You can also enjoy vs User.</p>
+                    </div>
+                    <div class="continue"> Go</div>
+                </div>
             </div>
         </div>
         <div class="buttons">
-            <div class="btn vsComp">vs Computer</div>
-            <div class="btn vsUser">vs User</div>
+            <div class="ask-back">
+                <div class="back">
+                    &#215;
+                </div>
+                <div class="ask">
+                    Choose between the two
+                </div>
+            </div>
+            <div class="btns">
+                <div class="btn vsComp">vs Computer</div>
+                <div class="btn vsUser">vs User</div>
+            </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

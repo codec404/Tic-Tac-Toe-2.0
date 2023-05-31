@@ -21,7 +21,7 @@ body{
     height: 560px;
     width: 100%;
     min-height: 100vh;
-    background-image: url("91657.jpg");
+    background-image: url("../Images/91657.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
